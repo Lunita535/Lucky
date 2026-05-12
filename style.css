@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
+* {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -54,7 +57,7 @@ html {
     background-color: #4d0a68;
     border-radius: 5px;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .hamburguesa {
         display: flex; 
     }
@@ -156,7 +159,6 @@ html {
     box-shadow: 0 0.25rem 0.6rem rgba(3, 3, 3, 0.651);
     transition: background-color 0.3s, transform 0.3s;
 }
-
 #btnArriba:hover {
     background-color: #B180D7;
     color: #0b0255;
@@ -185,10 +187,10 @@ ul li::marker {
     font-size: 1.5rem;
 }
 .info{
-    width: 90%;
+    width: 100%;
     max-width: 900px;
     margin: 2rem auto;
-    padding: 1rem ;
+    padding: 1.5rem ;
     align-items: center;
 }
 .info h1{
@@ -243,37 +245,33 @@ ul li::marker {
 }
 .contenedor-cards {
     display: flex;
-    flex-wrap: wrap; /* Permite que bajen si no caben */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem; /* Espacio entre tarjetas */
-    margin: 3rem 0;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    width: 100%;
 }
-
 .card {
-    background-color: white;
-    border: 2px solid #B180D7; /* Borde morado de Lucky */
-    border-radius: 20px;
-    padding: 2rem;
-    width: 250px; /* Ancho fijo para que se vean como cuadrados */
+    background-color: #dec5f0;
+    border: 5px solid #4d0a68;
+    border-radius: 30px;
+    padding: 1.5rem;
+    width: 100%; 
+    max-width: 320px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.692);
+    cursor: pointer;
 }
 .contenedor-cards a.card {
     text-decoration: none;
     display: block;
-    color: inherit;
 }
 .card:hover {
-    transform: translateY(-10px); /* Sube un poquito */
-    box-shadow: 0 10px 20px rgba(177, 128, 215, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(154, 89, 204, 0.781);
+    border-color: #0b0255;
 }
-
-.card-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
 .card h3 {
     color: #4d0a68;
     margin-bottom: 1rem;
@@ -281,9 +279,9 @@ ul li::marker {
 }
 
 .card p {
-    color: #555;
+    color: #363636;
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 /* Ajuste para móviles */
@@ -296,7 +294,22 @@ ul li::marker {
 .footer{
     background-color: #55156ee8;
     margin:0;
-    padding: 1rem;
+    padding: 2rem 1rem;
     font-size: 0.9rem;
     color: #4399ff ;
+    width: 100%;
+    margin-top: 3rem;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+.footer p, 
+.footer a {
+    inline-size: 100%;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+    hyphens: auto;
+}
+.footer a {
+    display: inline-block;
+    max-width: 100%;
 }
