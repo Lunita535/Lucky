@@ -1,7 +1,7 @@
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    background-color: #96d5fc;
+    background-color: #b7d8fd;
     margin: 0;
     padding: 0;
 }
@@ -139,7 +139,7 @@ html {
     }
 }
 .tabla-contenido {
-    background-color: #add3ff;
+    background-color: #86cdfc;
     border: 0.20rem solid #0b0255;
     border-radius: 1.2rem;
     margin: 2rem 0;
@@ -167,7 +167,7 @@ html {
 .tabla-contenido a {
     text-decoration: none;
     color: #4d0a68;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.3s ease;
 }
 .tabla-contenido a:hover {
@@ -186,10 +186,15 @@ html {
     align-items: center;
 }
 .ejercicios h1{
-    color: #4d0a68e5;
+    color: #4d0a68ee;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1.5rem;
+}
+.ejercicios h2{
+    color: #0b0255;
+    text-align: center;
+    font-size: 1.8rem;
 }
 .ejercicios p, li{
     font-size:1.2rem;
@@ -209,6 +214,15 @@ html {
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(77, 10, 104, 0.726);
 }
+.olas1{
+    width: 300px;
+    height: auto;           
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 15px rgba(77, 10, 104, 0.726);
+}
 .texto-ejercicios {
     flex: 1;
 }
@@ -223,6 +237,9 @@ html {
     }
     .ejercicios h1 {
         font-size: 2.2rem;
+    }
+    .ejercicios h2{
+        font-size: 1.5rem;
     }
 }
 ul{
@@ -266,7 +283,6 @@ ul li::marker {
     margin: 2rem auto;       
     aspect-ratio: 16 / 9; 
 }
-
 .videos iframe {
     position: absolute;
     top: 0;
@@ -274,6 +290,32 @@ ul li::marker {
     width: 100%;            
     height: 100%;
     border-radius: 15px;     
+}
+.pc{
+    width: 100%;
+    max-width: 400px; 
+    display: block;
+    margin: 2rem auto;
+    border-radius: 30px; 
+    box-shadow: 0 8px 15px rgba(77, 10, 104, 0.726);
+}
+.ej {
+    background-color: #5ba2fa;
+    border: 0.20rem solid #4d0a68;
+    border-radius: 1.2rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ej summary {
+    font-weight: bold;
+    color: #4d0a68;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    outline: none;
+    user-select: none;
 }
 .footer{
     background-color: #55156ee8;
